@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+# www.deepin.org
+
+export USE_NONFREEPIC = 1
+
+
+%:
+	dh $@ 
