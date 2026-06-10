@@ -11,6 +11,6 @@ Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: deepin-wallpapers-nonfree
 Replaces: deepin-wallpapers-nonfree
-Breaks: lingmo-desktop-base (<< 2017.11.2)
+Breaks: lingmo-desktop-base (<< 5.0.0.lingmo.1)
 Description: dde wallpapers
  Default wallpapers for dde
