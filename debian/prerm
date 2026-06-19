@@ -5,8 +5,8 @@ set -e
 
 case "$1" in
     remove|deconfigure|failed-upgrade)
-	update-alternatives --remove deepin-default-background \
-	    /usr/share/wallpapers/deepin/desktop.*
+	update-alternatives --remove lingmo-default-background \
+	    /usr/share/wallpapers/lingmo/desktop.*
 	;;
 esac
 

@@ -3,23 +3,23 @@ mkdir -p image-blur
 
 arch=$(uname -m)
 if [ x$arch = x"mips64" ] || [ x$arch = x"sw_64" ];then
-    for inname in $(ls ./deepin)
+    for inname in $(ls ./lingmo)
     do
         picname=${inname//jpg/bmp}
-        convert -resize 1920x1080 ./deepin/$inname ./deepin/$picname 
-        rm -rf ./deepin/$inname
+        convert -resize 1920x1080 ./lingmo/$inname ./lingmo/$picname 
+        rm -rf ./lingmo/$inname
     done
 fi
 
-for inname in ./deepin/*
+for inname in ./lingmo/*
 do
 	inname=${inname##*/}
-	md5name=`echo -n /usr/share/wallpapers/deepin/$inname | md5sum`
+	md5name=`echo -n /usr/share/wallpapers/lingmo/$inname | md5sum`
 	md5name=${md5name%  *}
     if [ x$arch = x"mips64" ] || [ x$arch = x"sw_64" ];then
 	    outname=$md5name.bmp
     else
 	    outname=$md5name.jpg
     fi
-	/usr/lib/deepin-api/image-blur --sigma 30 ./deepin/$inname ./image-blur/$outname
+	/usr/lib/deepin-api/image-blur --sigma 30 ./lingmo/$inname ./image-blur/$outnames
 done
