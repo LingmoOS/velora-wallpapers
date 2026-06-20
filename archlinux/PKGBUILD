@@ -30,8 +30,8 @@ package() {
   cp -r image-blur "$pkgdir"/var/cache/
   # Suggested by upstream
   install -dm755 "$pkgdir"/usr/share/backgrounds/deepin
-  ln -s ../../wallpapers/deepin/Hummingbird_by_Shu_Le.jpg "$pkgdir"/usr/share/backgrounds/deepin/desktop.jpg
-  ln -s $(echo -n /usr/share/wallpapers/deepin/Hummingbird_by_Shu_Le.jpg | md5sum | cut -d " " -f 1).jpg \
+  ln -s ../../wallpapers/lingmo/Hummingbird_by_Shu_Le.jpg "$pkgdir"/usr/share/backgrounds/deepin/desktop.jpg
+  ln -s $(echo -n /usr/share/wallpapers/lingmo/Hummingbird_by_Shu_Le.jpg | md5sum | cut -d " " -f 1).jpg \
         "$pkgdir"/var/cache/image-blur/$(echo -n /usr/share/backgrounds/deepin/desktop.jpg | md5sum | cut -d " " -f 1).jpg
   install -Dm644 LICENSES/CC-BY-4.0.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
