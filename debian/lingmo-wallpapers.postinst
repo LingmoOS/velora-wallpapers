@@ -6,7 +6,7 @@ case "${1}" in
 	configure)
 	    mkdir -p /usr/share/backgrounds/
 	    update-alternatives --install /usr/share/backgrounds/default.jpg \
-		    lingmo-default-background /usr/share/wallpapers/lingmo/defalut.jpg 51
+		    lingmo-default-background /usr/share/wallpapers/lingmo/default.jpg 51
 		;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
