@@ -1,10 +1,10 @@
-Source: velora-wallpapers
+Source: lingmo-wallpapers
 Section: utils
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
-Build-Depends: debhelper (>=9), dde-api
+Build-Depends: debhelper (>=9), lingmo-api
 Standards-Version: 4.5.0
-Homepage: https://github.com/LingmoOS/velora-wallpapers
+Homepage: https://github.com/LingmoOS/lingmo-wallpapers
 
 Package: lingmo-wallpapers
 Architecture: all
